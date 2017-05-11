@@ -1,0 +1,14 @@
+
+git add .
+
+git commit -m "change done"
+
+git push -u origin master
+
+
+
+
+# Good to know
+git status
+
+git log
