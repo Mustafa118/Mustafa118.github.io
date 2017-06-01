@@ -1,0 +1,12 @@
+# vad har hänt?
+git status 
+
+# lägg till nya filer eller sådant som ändrats
+git add .
+
+# beredd att ladda upp
+git commit -m "generic comment"
+
+# ladda upp
+git push -u origin master
+
