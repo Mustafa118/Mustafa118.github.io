@@ -1,66 +1,339 @@
-<!DOCTYPE html>
-<html>
-
-	<head>
-		
-		<meta charset="utf-8">
-		<Title> Mustis sida </Title>
-		<link rel="stylesheet" type="text/css" href="stil.css">
-        <meta name="viewport" content="width=device-width, initial- scale=1">
-        <link rel="stylesheet" href="styles.css">
-        
-      
-	</head>
-
-	<body>
-        
-        <h1>Palace hotell</h1>
-		
-        <div id='cssmenu'>
-<ul>
-   <li><a href='index.html'>Hem</a></li>
-   <li><a href='Boka.html'>Boka</a>
-      <ul>
-         <li><a href='bokaRum.html'>Rum</a>
-         </li>
-         <li><a href='bokaLokal.html'>Lokal</a>
-         </li>
-      </ul>
-   </li>
-   <li class='active'><a href='Hitta.html'>Hitta</a></li>
-   <li><a href='Kontakta.html'>Kontakta</a>
-       <ul>
-         <li><a href='Meddelande.html'>Meddelande</a>
-         </li>
-        </ul>
-    </li>
-</ul>
-</div>
-<div id="tabell">
-    <div id="tabellrad">
-        <section id="vanster">  
-        <h2>Basic info</h2>
-            <p>Lorem ipsum dolor sit amet, sed ex error corpora principes, augue eruditi philosophia eu sed, eu liber complectitur deterruisset quo. Ad pri fabulas temporibus, ea altera possit eos, sea in modo oblique veritus. Phaedrum euripidis duo an, ut unum utamur tritani est. Id rebum affert sea, mel amet probo quaerendum ad. Has cu quod facilisis, qui persecuti abhorreant ne. Ne vitae lobortis vim, vel ne veri cetero nostrum.
-</p></section>
-        
-        <section id="hoger"> 
-            <h2>Vägebeskrivning</h2>
-            <p>Id pro tempor tractatos omittantur, est ei insolens iracundia. In legendos pericula quo. Nullam assueverit et eum, agam ignota pertinax in mei, id tincidunt liberavisse voluptatibus quo. Ne eum justo delectus comprehensam, cum labores reprimique inciderint ei. Eam ea nobis noluisse repudiandae, at audiam inciderint philosophia qui, quo ea sanctus definiebas persequeris. In mei dicunt principes.</p>
-        </section>	
-    </div>
-</div>
-
-    <iframe id="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36068.325642831565!2d12.97753665612116!3d55.59730835109682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465305a574c491ff%3A0xd3a905dfbd4888e5!2zTWFsbcO2!5e0!3m2!1ssv!2sse!4v1459763040523" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<!doctype html> 
+<html lang="sw">
     
-    <footer> 
-        <h3>Konatkt information:</h3> 
-            <ul id="kontakt">
-                <li> Telefonnummer: 070-1234567</li>
-                <li> Email: Hotel@mail.se</li>
-                <li> Adress: bla bla bla</li>
-            </ul>
-    </footer>
-
+    <head>
+        <meta charset="utf-8">
         
+        <title> Palace hotell </title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- bootstrap.min.css -->
+        <link rel="stylesheet" href="Filler/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+
+        <!-- bootstrap-theme.min.css -->
+        <link rel="stylesheet" href="Filler/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+        
+        <!-- main.css -->
+        <link rel="stylesheet" href="Filler/main.css"/>
+        
+    </head>
+    
+    <body>
+        
+        <!-- Navigation bar -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-static-top border-dark-width6px-radius-top-left-right">
+                <!-- Logo -->
+                <div class="navbar-header border-white-width6px-left border-grey-width6px-right">
+                    
+                    <!-- Toggle menu items -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
+                    
+                    <p class="navbar-brand"> Palace hotell </p>
+                </div>
+                     
+                <!-- Menu itemes -->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <ul class="nav navbar-nav">
+                        
+                        <li role="presentation"> 
+                            <a href="startsida.html" class="link"> Startsida </a> 
+                        </li>
+
+                        <li role="presentation" class="active border-yellow-width6px-bottom-right "> 
+                            <a href="boka.html"> Boka </a> 
+                        </li>
+
+                        <li role="presentation"> 
+                            <a href="kontakta.html" class="link"> Kontakta </a> 
+                        </li>
+
+                        <li role="presentation"> 
+                            <a href="hitta.html" class="link"> Hitta </a>
+                        </li>
+                        
+                        <li role="presentation">
+                            <a href="aktiviteter.html" class="link"> Aktiviteter </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </nav>
+        </div>
+            
+        <!-- Section -->
+        <div class="container">
+            <section class="well border-white-width6px-radius10px padding-all-40px">
+                <!-- Text -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="textCenter"> Boka </h3>
+                    </div>
+                </div>
+                
+                <!-- Forms -->
+                <div class="row padding-all-25px  border-grey-width6px-radius10px backgroundWhite margin-bottom-15px">  
+                    <form class="form-horizontal">
+                        
+                        <!-- Ankomst-datum avgångs-datum -->
+                        <div class="row margin-bottom-15px">
+                            
+                            <!-- Ankomst-datum -->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Ankomst-datum: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="dag">
+                                            </div>
+                                            
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="månad">
+                                            </div>
+                                            
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="år">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>    
+                            </div>
+                            
+                            <!-- Avgångs-datum -->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Avgångs-datum: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="dag">
+                                            </div>
+                                            
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="månad">
+                                            </div>
+                                            
+                                            <div class="col-xs-4">
+                                                <input class="form-control" type="text" placeholder="år">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>    
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Ankomsts-tid avgångs-tid -->
+                        <div class="row margin-bottom-15px">
+                            
+                            <!-- Ankomsts-tid -->
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Ankomst-tid: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" placeholder="tid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Avgångs-Tid -->
+                            <div class="col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Avgångs-tid: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" placeholder="tid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Antal barn vuxna -->
+                        <div class="row">
+                            
+                            <div class="col-sm-6 margin-bottom-15px">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Antal barn: </label>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>	
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 margin-bottom-15px">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label class="control-label"> Antal vuxna: </label>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Antal rum -->
+                        <div class="row margin-bottom-15px">
+                            <div class="col-md-12">
+                                <div class="row"> 
+                                    <div class="col-md-1">
+                                        <label class="control-label"> Antal rum: </label>
+                                    </div>
+                                    
+                                    <div class="col-md-11">
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Lunch-buffe frokust-buffe -->
+                        <div class="row margin-bottom-15px">
+                            <div>
+                                  
+                                <!-- Frokust buffe -->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <div class="col-xs-5 col-xs-offset-1">
+                                            <label> Ingående frokust buffe: </label>
+                                        </div>
+                                        
+                                        <div class="col-xs-5 col-xs-offset-1">
+                                            <input type="checkbox"> 
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Lunch buffe -->
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-xs-5 col-xs-offset-1">
+                                            <label> Ingående lunch buffe: </label>
+                                        </div>
+                                        
+                                        <div class="col-xs-5 col-xs-offset-1">
+                                            <input type="checkbox">     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Boka -->
+                        <div class="row margin-bottom-15px padding-left-15-procent padding-right-15-procent">
+                            <div class="btn-group btn-group-justified">
+                                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal"> Boka </a>
+                            </div>
+                        </div>
+                        
+                        <!-- modal -->
+                        <div id="Modal" class="modal fade" role="dialog">
+                            <div class="modal-dialog modalHorizontelCenterPosition">
+                                
+                                <!-- modal innehåll -->
+                                <div class="modal-content">
+                                    
+                                    <!-- modal header -->
+                                    <div class="modal-header">
+                                        <div class="row">
+                                            <div class="col-xs-11">
+                                            </div>
+                                            
+                                            <div class="col-xs-1">
+                                                <div class="alignCenter">
+                                                    <span class="glyphicon glyphicon-remove link linkSize1" aria-hidden="true" data-dismiss="modal"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <!-- modal body -->
+                                    <div class="modal-body">
+                                        <h4 class="textCenter">
+                                            Bokningen har slutförts utan några problem. 
+                                        </h4>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                <!-- Images -->
+                <div class="row padding-all-25px border-grey-width6px-radius10px backgroundWhite">
+                    <div class="row">
+                        
+                        <!-- Image 1-->
+                        <div class="col-sm-6 margin-bottom-15px">
+                            <img src="Filler/Bilder/Boka/Rom.png" alt="Konferansrom" class="img-responsive border-dark-width10px-radius10px">
+                        </div>
+                        
+                        <!-- Image 2-->
+                        <div class="col-sm-6">
+                            <img src="Filler/Bilder/Boka/Konferans_Rum.png" alt="Rum" class="img-responsive border-dark-width10px-radius10px">
+                        </div>    
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
+        <!-- The scripts -->
+        <div>
+            
+            <!-- jquery-3.2.1.min.js -->
+            <script src="Filler/jquery-3.2.1.min.js">
+            </script>
+            
+            <!-- bootstrap.min.js -->
+            <script src="Filler/bootstrap-3.3.7-dist/js/bootstrap.min.js">
+            </script>
+            
+        </div>  
     </body>
+    
 </html>
